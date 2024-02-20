@@ -41,6 +41,7 @@ header div {
     margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    max-width: 40rem;
 }
 main,
 footer {
