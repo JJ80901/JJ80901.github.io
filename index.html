@@ -1,39 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Josue Cavazos Jr.</title>
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/assets/user.png" rel="icon"/>
-        <script type="module" src="PCBs/kicanvas.js"></script>
-    </head>
-    <body>
-        <header>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div>
-                <a href="https://www.linkedin.com/in/josue-cavazos-jr/" target="_blank"><img src="assets/css/assets/linkedin.png" /></a>
-                <a href="https://www.instagram.com/j.j.cavazos/" target="_blank"><img src="assets/css/assets/instagram.png" /></a>
-            </div>
-        </header>
-        <main>
-            <img src="assets/css/assets/profile pic.png" width="200rem"/>
-        </main>
-        <section>
-            <h1>Josue Cavazos Jr.</h1>
-        </section>
-        <p class="pcb">
-            <kicanvas-embed controls="full">
-                <kicanvas-source src="PCBs/VMS/DCDCVoltageDoubler.kicad_sch" aria-hidden="true" hidden="" style="display: none;"></kicanvas-source>
-                <kicanvas-source src="PCBs/VMS/VoltageMeasurementShieldMIII.kicad_sch" aria-hidden="true" hidden="" style="display: none;"></kicanvas-source>
-                <kicanvas-source src="PCBs/VMS/VoltageRegulator.kicad_sch" aria-hidden="true" hidden="" style="display: none;"></kicanvas-source>
-                <kicanvas-source src="PCBs/VMS/VoltageMeasurementShieldMIII.kicad_pcb" aria-hidden="true" hidden="" style="display: none;"></kicanvas-source>
-            </kicanvas-embed>
-        </p>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Josue Cavazos Jr.</title>
+  <link href="assets/images/user.png" rel="icon"/>
+  <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  <script type="module" src="assets/PCBs/kicanvas.js"></script>
+  <script href="assets/script.js"></script>
+</head>
+<body>
+<header>
+  <p>Josue Cavazos Jr.</p>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+  <main>
+    <section class="banner">
+      <div>
+        <h1>Josue Cavazos Jr.</h1>
+        <h2>B.S. Electrical Engineering, Computer Engineering</h2>
+        <h3>Computer Science, Math minor</h3>
+        <p class="info">I am an ambitious, graduating student at the Missouri University of Science and Technology. I am dedicated to making a difference in the STEM field, whether that be in my position as an undergraduate research assistant in the <a href="https://news.mst.edu/2013/09/researchers-study-ways-to-make-stronger-materials-in-3-d/" target="_blank">Laser Aided Manufacturing Process lab</a> on campus, at <a href="https://imecmonett.com/" target="_blank">IMEC Monett</a>, <a href="https://nucor.com/" target="_blank">Nucor Steel</a>, or <a href="https://www.burnsmcd.com/" target="_blank">Burns & McDonnell</a>.</p>
+      </div>
+      <img src="assets/images/profile pic.png" width="250rem"/>
+    </section>
+    <section class="nav">
+      <ul>
+        <li><a href=#1>Hardware</a></li>
+        <li><a href=#2>Software</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </section>
+    <section class="hardware">
+      <h1 id="1">Hardware</h1>
+      <div class="pcbdesign">
+        <div>
+          <h3>Arduino Voltage Measurement Shield</h3>
+          <p>
+            This is a custom voltage measurement shield 
+            I made for the arduino. This design incorperates 
+            five different circuits: a DC-DC voltage doubler, 
+            a voltage regulator with an LM317 variable voltage 
+            regulator, an LM555 timer, Adafruit ADS1015s (Not in schematic, but connected with pins), and a voltage divider.<br><br>
+            I was having a hard time reading the voltage of a laser
+             displacement sensor I had that would output a voltage 
+            of either +10V or -10V. The problem is that the arduino 
+            analog to digital converters (ADCs) could only read a range 
+            of 0-5V.<br><br>This shield will take in the voltage of a 
+            9V battery, double it to a range of 16-17V, and the LM317
+             voltage regulator will output a percise and consistant 10V.
+            This signal would then be added to the laser signal in order to 
+            only get possbly 0-20V. Then a simple voltage divider was used
+             in order to get the voltage read by the ADS1015s (used for more accuracy with a 12 bit resolution) 
+            to a comfortable 0-5V range that would be back figured to find the initial voltage on the microcontroller.
+          </p>
+        </div>
+          <section class="pcb">
+              <kicanvas-embed controls="full">
+                  <kicanvas-source src="assets/PCBs/VMS/VoltageMeasurementShieldMIII.kicad_pcb"></kicanvas-source>
+              </kicanvas-embed>
+          </section>
+      </div>
+      <div class="pcbdesign" id="second">
+          <section class="pcb">
+              <kicanvas-embed controls="full">
+                  <kicanvas-source src="assets/PCBs/VMS/VoltageMeasurementShieldMIII.kicad_pcb"></kicanvas-source>
+              </kicanvas-embed>
+          </section>
+        <div>
+          <h3>Full Wave Rectifier</h3>
+          <p>
+            This is a custom voltage measurement shield 
+            I made for the arduino. This design incorperates 
+            five different circuits: a DC-DC voltage doubler, 
+            a voltage regulator with an LM317 variable voltage 
+            regulator, an LM555 timer, Adafruit ADS1015s (Not in schematic, but connected with pins), and a voltage divider.<br><br>
+            I was having a hard time reading the voltage of a laser
+             displacement sensor I had that would output a voltage 
+            of either +10V or -10V. The problem is that the arduino 
+            analog to digital converters (ADCs) could only read a range 
+            of 0-5V.<br><br>This shield will take in the voltage of a 
+            9V battery, double it to a range of 16-17V, and the LM317
+             voltage regulator will output a percise and consistant 10V.
+            This signal would then be added to the laser signal in order to 
+            only get possbly 0-20V. Then a simple voltage divider was used
+             in order to get the voltage read by the ADS1015s (used for more accuracy with a 12 bit resolution) 
+            to a comfortable 0-5V range that would be back figured to find the initial voltage on the microcontroller.
+          </p>
+        </div>
+      </div>
+      <div class="pcbdesign" id="third">
+        <div>
+          <h3>LED Photodiode Circuit</h3>
+          <p>
+            This is a custom voltage measurement shield 
+            I made for the arduino. This design incorperates 
+            five different circuits: a DC-DC voltage doubler, 
+            a voltage regulator with an LM317 variable voltage 
+            regulator, an LM555 timer, Adafruit ADS1015s (Not in schematic, but connected with pins), and a voltage divider.<br><br>
+            I was having a hard time reading the voltage of a laser
+             displacement sensor I had that would output a voltage 
+            of either +10V or -10V. The problem is that the arduino 
+            analog to digital converters (ADCs) could only read a range 
+            of 0-5V.<br><br>This shield will take in the voltage of a 
+            9V battery, double it to a range of 16-17V, and the LM317
+             voltage regulator will output a percise and consistant 10V.
+            This signal would then be added to the laser signal in order to 
+            only get possbly 0-20V. Then a simple voltage divider was used
+             in order to get the voltage read by the ADS1015s (used for more accuracy with a 12 bit resolution) 
+            to a comfortable 0-5V range that would be back figured to find the initial voltage on the microcontroller.
+          </p>
+        </div>
+        <section class="pcb">
+            <kicanvas-embed controls="full">
+                <kicanvas-source src="assets/PCBs/VMS/VoltageMeasurementShieldMIII.kicad_pcb"></kicanvas-source>
+            </kicanvas-embed>
+        </section>
+      </div>
+    </section>
+    <section class="software">
+      <h1 id="2">Software</h1>
+    </section>
+  </main>
+  <footer>
+    <p>JOSUE CAVAZOS JR. 2024</p>
+  </footer>
+</body>
 </html>
