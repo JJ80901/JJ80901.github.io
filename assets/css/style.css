@@ -132,6 +132,7 @@ main {
 }
 .pcb {
   max-width: 40rem;
+  min-width: 35rem;
 }
 #second {
   background-color: white;
