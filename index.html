@@ -68,62 +68,35 @@
           </section>
       </div>
       <div class="pcbdesign" id="second">
-          <section class="pcb">
-              <kicanvas-embed controls="full">
-                <kicanvas-source src="PCBs/VMS/VoltageMeasurementShieldMIII.kicad_pcb"></kicanvas-source>
-              </kicanvas-embed>
-          </section>
-        <div>
-          <h3>Full Wave Rectifier</h3>
-          <p>
-            This is a custom voltage measurement shield 
-            I made for the arduino. This design incorperates 
-            five different circuits: a DC-DC voltage doubler, 
-            a voltage regulator with an LM317 variable voltage 
-            regulator, an LM555 timer, Adafruit ADS1015s (Not in schematic, but connected with pins), and a voltage divider.<br><br>
-            I was having a hard time reading the voltage of a laser
-             displacement sensor I had that would output a voltage 
-            of either +10V or -10V. The problem is that the arduino 
-            analog to digital converters (ADCs) could only read a range 
-            of 0-5V.<br><br>This shield will take in the voltage of a 
-            9V battery, double it to a range of 16-17V, and the LM317
-             voltage regulator will output a percise and consistant 10V.
-            This signal would then be added to the laser signal in order to 
-            only get possbly 0-20V. Then a simple voltage divider was used
-             in order to get the voltage read by the ADS1015s (used for more accuracy with a 12 bit resolution) 
-            to a comfortable 0-5V range that would be back figured to find the initial voltage on the microcontroller.
-          </p>
-        </div>
-      </div>
-      <div class="pcbdesign" id="third">
-        <div>
-          <h3>LED Photodiode Circuit</h3>
-          <p>
-            This is a custom voltage measurement shield 
-            I made for the arduino. This design incorperates 
-            five different circuits: a DC-DC voltage doubler, 
-            a voltage regulator with an LM317 variable voltage 
-            regulator, an LM555 timer, Adafruit ADS1015s (Not in schematic, but connected with pins), and a voltage divider.<br><br>
-            I was having a hard time reading the voltage of a laser
-             displacement sensor I had that would output a voltage 
-            of either +10V or -10V. The problem is that the arduino 
-            analog to digital converters (ADCs) could only read a range 
-            of 0-5V.<br><br>This shield will take in the voltage of a 
-            9V battery, double it to a range of 16-17V, and the LM317
-             voltage regulator will output a percise and consistant 10V.
-            This signal would then be added to the laser signal in order to 
-            only get possbly 0-20V. Then a simple voltage divider was used
-             in order to get the voltage read by the ADS1015s (used for more accuracy with a 12 bit resolution) 
-            to a comfortable 0-5V range that would be back figured to find the initial voltage on the microcontroller.
-          </p>
-        </div>
         <section class="pcb">
-            <kicanvas-embed controls="full">
-                <kicanvas-source src="PCBs/VMS/VoltageMeasurementShieldMIII.kicad_pcb"></kicanvas-source>
-            </kicanvas-embed>
+          <kicanvas-embed controls="full">
+            <kicanvas-source src="PCBs/SMDVMS/Voltage Measurement Shield MIV.kicad_sch"></kicanvas-source>
+            <kicanvas-source src="PCBs/SMDVMS/Voltage Measurement Shield MIV.kicad_pcb"></kicanvas-source>
+          </kicanvas-embed>
         </section>
+        <div>
+          <h3>Arduino Voltage Measurement Shield</h3>
+          <p>
+            This is a custom voltage measurement shield 
+            I made for the arduino. This design incorperates 
+            four different circuits: a DC-DC voltage doubler, 
+            a voltage regulator with an LM317 variable linear 
+            regulator, an LM555 timer, and a voltage divider.<br><br>
+            I was having a hard time reading the voltage of a laser
+             displacement sensor I had that would output a signal 
+            of +-10V. The problem is that the arduino 
+            analog to digital converters (ADCs) could only read a range 
+            of 0-5V.<br><br>This shield will take in the voltage of a 
+            9V battery, double it to a range of 16-17V, and the LM317
+             voltage regulator will output a percise and consistant 10V.
+            This signal would then be added to the laser signal in order to 
+            only get possbly 0-20V. Then a simple voltage divider was used
+             in order to get the voltage read by the on board ADCs to a 
+            comfortable 0-5V range that would be back figured to find the 
+            initial voltage on the microcontroller.
+          </p>
+        </div>
       </div>
-    </section>
     <section class="software">
       <h1 id="2">Coming Soon!</h1>
     </section>
