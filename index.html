@@ -39,25 +39,18 @@
       <h1 id="1">Hardware</h1>
       <div class="pcbdesign">
         <div>
-          <h3>Arduino Voltage Measurement Shield</h3>
+          <h3>Senior Design: Motion Detector Board</h3>
           <p>
-            This is a custom voltage measurement shield 
-            I made for the arduino. This design incorperates 
-            four different circuits: a DC-DC voltage doubler, 
-            a voltage regulator with an LM317 variable linear 
-            regulator, an LM555 timer, and a voltage divider.<br><br>
-            I was having a hard time reading the voltage of a laser
-             displacement sensor I had that would output a signal 
-            of +-10V. The problem is that the arduino 
-            analog to digital converters (ADCs) could only read a range 
-            of 0-5V.<br><br>This shield will take in the voltage of a 
-            9V battery, double it to a range of 16-17V, and the LM317
-             voltage regulator will output a percise and consistant 10V.
-            This signal would then be added to the laser signal in order to 
-            only get possbly 0-20V. Then a simple voltage divider was used
-             in order to get the voltage read by the on board ADCs to a 
-            comfortable 0-5V range that would be back figured to find the 
-            initial voltage on the microcontroller.
+            This board tracks motion with a 9DOF IMU and transmits the processed data via BLE. 
+            This design uses 
+            an ESP32-C3-Mini-N4 as the microcontroller, 
+            an ICM-20948 as the IMU, and two TLV62569DBVT switching regulators.<br><br>
+            I wanted to take measurements of a frisbee's motion when thrown. 
+            Specifically motion such as the initial RPM, anlge of launch, stability, etc. 
+            This can all be done with the on board IMU.<br><br>The IMU has 9 degrees of freedom, a 
+            3 axis accelerometer, gyrometer, and magnetometer each measuring in the x, y, and z direction.
+             This IMU is important due to its small size and processing power with an on chip data processor.
+              This is a prototype that will be reduced in size for the final product.
           </p>
         </div>
           <section class="pcb">
