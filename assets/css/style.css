@@ -177,3 +177,26 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+@media (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+      text-align: center;
+  }
+  .pcbdesign {
+      flex-direction: column;
+      padding: 2rem 1rem;
+  }
+  .pcb {
+      max-width: 100%;
+      min-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .banner h1 {
+      font-size: 2.5rem;
+  }
+  .banner p {
+      font-size: 1rem;
+      max-width: 90%;
+  }
+}
