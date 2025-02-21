@@ -2,14 +2,15 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "78dae1b0-3dec-4f9a-bc4d-7b6fb3842c26")
+	(uuid "3a13d9bb-3700-499a-bcbc-99ebe364dcaa")
 	(paper "A4")
 	(title_block
 		(title "Motion Board")
-		(date "2025-01-13")
-		(rev "B")
+		(date "2025-02-02")
+		(rev "C")
 		(company "GlideSense Pro")
 		(comment 1 "Josue Cavazos Jr.")
+		(comment 2 "Andrew Thomas")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole"
@@ -97,72 +98,65 @@
 	)
 	(text "[2] MCU"
 		(exclude_from_sim no)
-		(at 121.666 68.326 0)
+		(at 130.302 71.628 0)
 		(effects
 			(font
-				(size 5.0038 5.0038)
-				(thickness 1.0008)
+				(size 5 5)
 				(bold yes)
 				(italic yes)
 			)
-			(justify left bottom)
 		)
-		(uuid "0c8b6c7b-92fb-4584-8428-94a9b61e6680")
-	)
-	(text "[1] Power"
-		(exclude_from_sim no)
-		(at 50.292 67.818 0)
-		(effects
-			(font
-				(size 5.0038 5.0038)
-				(thickness 1.0008)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "1f1e90ac-558d-4852-a5f9-5083a0b46e9a")
-	)
-	(text "Motion Board"
-		(exclude_from_sim no)
-		(at 18.288 27.432 0)
-		(effects
-			(font
-				(size 6 6)
-				(thickness 1.0008)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "245c228a-5204-4f59-99c3-0dbd4bf6e48d")
+		(uuid "08393109-6ec2-41b5-bd6a-cfa10183b6fa")
 	)
 	(text "[3] Motion"
 		(exclude_from_sim no)
-		(at 192.786 68.326 0)
+		(at 221.234 71.628 0)
 		(effects
 			(font
-				(size 5.0038 5.0038)
-				(thickness 1.0008)
+				(size 5 5)
 				(bold yes)
 				(italic yes)
 			)
-			(justify left bottom)
 		)
-		(uuid "f47fcdf5-cb69-4b47-b918-cb702f974dd7")
+		(uuid "0c3c30d0-55d7-4af0-98ef-56da0a5d8ad8")
+	)
+	(text "Motion Board"
+		(exclude_from_sim no)
+		(at 53.34 26.67 0)
+		(effects
+			(font
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "162625b3-3109-4e71-988a-bb6f7639fc59")
+	)
+	(text "[1] Power"
+		(exclude_from_sim no)
+		(at 49.022 71.374 0)
+		(effects
+			(font
+				(size 5 5)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "301aee65-29ba-4741-9606-f429c6c7dd2a")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 21.59 179.07 0)
+		(at 21.59 173.99 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "114c697f-c61e-4f82-84ff-82a1b6c5394a")
-		(property "Reference" "H2"
-			(at 24.13 177.7999 0)
+		(uuid "261af741-6e1b-484d-a52f-1d5c1a73e63c")
+		(property "Reference" "H100"
+			(at 24.13 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -171,7 +165,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 24.13 180.3399 0)
+			(at 24.13 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -180,7 +174,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 21.59 179.07 0)
+			(at 21.59 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -189,7 +183,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 21.59 179.07 0)
+			(at 21.59 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -198,7 +192,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 21.59 179.07 0)
+			(at 21.59 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -207,9 +201,9 @@
 			)
 		)
 		(instances
-			(project "GlideSensePro MIII"
-				(path "/78dae1b0-3dec-4f9a-bc4d-7b6fb3842c26"
-					(reference "H2")
+			(project "GSP RevC"
+				(path "/3a13d9bb-3700-499a-bcbc-99ebe364dcaa"
+					(reference "H100")
 					(unit 1)
 				)
 			)
@@ -217,16 +211,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 21.59 172.72 0)
+		(at 21.59 180.34 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e59ce2ca-bbfa-42b0-9b03-26e7311b3d0b")
-		(property "Reference" "H1"
-			(at 24.13 171.4499 0)
+		(uuid "70a43148-6b71-452f-afc0-c982c828eedf")
+		(property "Reference" "H101"
+			(at 24.13 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -235,7 +229,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 24.13 173.9899 0)
+			(at 24.13 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -244,7 +238,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 21.59 172.72 0)
+			(at 21.59 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -253,7 +247,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 21.59 172.72 0)
+			(at 21.59 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -262,7 +256,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 21.59 172.72 0)
+			(at 21.59 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -271,81 +265,17 @@
 			)
 		)
 		(instances
-			(project "GlideSensePro MIII"
-				(path "/78dae1b0-3dec-4f9a-bc4d-7b6fb3842c26"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 21.59 185.42 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb4dc7e5-0040-4b75-9136-1ae5094a3930")
-		(property "Reference" "H3"
-			(at 24.13 184.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 24.13 186.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 21.59 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 21.59 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 21.59 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "GlideSensePro MIII"
-				(path "/78dae1b0-3dec-4f9a-bc4d-7b6fb3842c26"
-					(reference "H3")
+			(project "GSP RevC"
+				(path "/3a13d9bb-3700-499a-bcbc-99ebe364dcaa"
+					(reference "H101")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 121.92 80.01)
-		(size 58.42 57.15)
+		(at 201.93 82.55)
+		(size 69.85 62.23)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -354,85 +284,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "34977501-8877-4c2e-a256-93e3eb73351f")
-		(property "Sheetname" "MCU"
-			(at 121.92 79.2984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "MCU.kicad_sch"
-			(at 121.92 137.7446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "GlideSensePro MIII"
-				(path "/78dae1b0-3dec-4f9a-bc4d-7b6fb3842c26"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 50.8 80.01)
-		(size 58.42 57.15)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7eb6dcc2-6474-41f1-91ec-3e1d2d8fd0d4")
-		(property "Sheetname" "Power"
-			(at 50.8 79.2984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Power.kicad_sch"
-			(at 50.8 137.7446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "GlideSensePro MIII"
-				(path "/78dae1b0-3dec-4f9a-bc4d-7b6fb3842c26"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 193.04 80.01)
-		(size 58.42 57.15)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "ba0992a9-5b47-4202-bdf0-86fae516d9c2")
+		(uuid "6164440d-c67c-48e2-9407-48130dd53f43")
 		(property "Sheetname" "Motion"
-			(at 193.04 79.2984 0)
+			(at 201.93 81.8384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -441,7 +295,7 @@
 			)
 		)
 		(property "Sheetfile" "Motion.kicad_sch"
-			(at 193.04 137.7446 0)
+			(at 201.93 145.3646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -450,9 +304,85 @@
 			)
 		)
 		(instances
-			(project "GlideSensePro MIII"
-				(path "/78dae1b0-3dec-4f9a-bc4d-7b6fb3842c26"
+			(project "GSP RevC"
+				(path "/3a13d9bb-3700-499a-bcbc-99ebe364dcaa"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 82.55)
+		(size 69.85 62.23)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dfda6736-f99f-409a-a8c2-f65712ba303c")
+		(property "Sheetname" "Power"
+			(at 30.48 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 30.48 145.3646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GSP RevC"
+				(path "/3a13d9bb-3700-499a-bcbc-99ebe364dcaa"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115.57 82.55)
+		(size 69.85 62.23)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e3fc1977-3a9b-4f7d-b26f-75d16b1feb53")
+		(property "Sheetname" "MCU"
+			(at 115.57 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 115.57 145.3646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GSP RevC"
+				(path "/3a13d9bb-3700-499a-bcbc-99ebe364dcaa"
+					(page "3")
 				)
 			)
 		)
