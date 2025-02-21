@@ -32,7 +32,7 @@ header li {
 header a {
     color: black;
 }
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 main {
