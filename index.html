@@ -39,18 +39,20 @@
       <h1 id="1">Hardware</h1>
       <div class="pcbdesign">
         <div>
-          <h3>Senior Design: Motion Sensor Board</h3>
+          <h3>Senior Design: Wireless Motion Board</h3>
           <p>
-            This board tracks motion with a 9DOF IMU and transmits the processed data via BLE. 
-            This design uses 
-            an ESP32-C3-Mini-N4 as the microcontroller, 
-            an ICM-20948 as the IMU, and two TLV62569DBVT switching regulators.<br><br>
-            I wanted to take measurements of a frisbee's motion when thrown. 
-            Specifically motion such as the initial RPM, anlge of launch, stability, etc. 
-            This can all be done with the on board IMU.<br><br>The IMU has 9 degrees of freedom, a 
-            3 axis accelerometer, gyrometer, and magnetometer each measuring in the x, y, and z direction.
-             This IMU is important due to its small size and processing power with an on chip data processor.
-              This is a prototype that will be reduced in size for the final product.
+            This board is designed to capture and wirelessly transmit motion data during a frisbee toss. 
+            It features an ESP32-C3-Mini-N4 microcontroller for efficient Bluetooth Low Energy (BLE) 
+            communication and an ICM-42670 high-precision 6DOF IMU for real-time motion tracking.<br><br>
+            The primary goal of this project is to analyze key motion parameters of a frisbee throw, 
+            including initial spin rate (RPM), launch angle, stability, and acceleration. 
+            The ICM-42670 provides high-resolution accelerometer and gyroscope data, which allows for precise 
+            measurement of motion dynamics.<br><br>
+            This design improves upon previous iterations by optimizing power efficiency and 
+            reducing form factor for future iterations. The onboard TLV62569DBVT switching regulator ensures 
+            stable power delivery to both the ESP32 and IMU. The compact size and BLE connectivity 
+            make this an ideal prototype for real-world frisbee motion analysis, with potential applications 
+            in sports analytics, biomechanics research, and performance optimization.
           </p>
         </div>
           <section class="pcb">
