@@ -75,6 +75,8 @@ main {
 .banner ul {
   margin-bottom: 1rem;
   padding-left: 1rem;
+  font-size: 1.25rem;
+  max-width: 38rem;
 }
 .info a {
     color: #02577a;
