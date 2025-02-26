@@ -112,9 +112,10 @@
             real-world problem while working with a <strong>±10V laser displacement sensor</strong>. Since 
             an <strong>Arduino's ADC can only read 0-5V</strong>, I designed this shield to properly 
             shift and scale the sensor's voltage output for accurate measurement.<br><br>
-            The design integrates four key circuits: <strong>DC-DC voltage doubler</strong> to boost a 
-            9V battery to ~17V, <strong>LM317 voltage regulator</strong> to provide a stable 10V reference, 
-            <strong>LM555 timer</strong> for signal conditioning, <strong>Voltage divider</strong> to scale the 
+            The design integrates four key circuits: <strong>DC-DC voltage doubler</strong> using a <strong>LM555 timer</strong>
+             to boost a 
+            9V battery to ~17V, a <strong>LM317 voltage regulator</strong> to provide a stable 10V reference, 
+            and finally a <strong>Voltage divider</strong> to scale the 
             adjusted signal into the Arduino's 
             readable range<br><br>
             By <strong>offsetting the sensor's ±10V signal to a 0-20V range and 
